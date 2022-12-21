@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/* some global styles */
+html {
+	line-height: 1.15;
+	/* Prevent adjustments of font size after orientation changes in iOS */
+	-webkit-text-size-adjust: 100%;
+}
+
+:root {
+	--background-color: rgb(193, 190, 255);
+	--text-color: #181d31;
+}
+::selection {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	text-shadow: 2px 1px 10px rgba(150, 102, 251, 0.95);
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+img {
+	border-style: none;
+}
+
+/* normilized styles for forms */
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+
+/* lists */
+ol,
+ul {
+	list-style: none;
+}
