@@ -9,9 +9,8 @@ const Login = () => {
 					<h1>Hi there!</h1>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Reprehenderit sint nam eos exercitationem maxime quia
-						consequatur illo mollitia eveniet iusto alias nemo amet
-						obcaecati, distinctio aliquid a. Error, nisi repudiandae!
+						Reprehenderit sint nam eos maxime quia consequatur illo
+						exercitationem mollitia!
 					</p>
 					<span>Don't have an account?</span>
 					<button>Register</button>
