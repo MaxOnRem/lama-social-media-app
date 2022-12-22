@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './login.scss';
 
 const Login = () => {
@@ -13,18 +13,15 @@ const Login = () => {
 						exercitationem mollitia!
 					</p>
 					<span>Don't have an account?</span>
-					<button>Register</button>
+					<Link to="/register">
+						<button>Register</button>
+					</Link>
 				</div>
 				<div className="right">
 					<h2>Login</h2>
 					<form>
 						<input type="text" placeholder="Username" />
 						<input type="password" placeholder="Password" />
-						{/* <Routes>
-							<NavLink to="../Register/Register.jsx">
-								<button>Login</button>
-							</NavLink>
-						</Routes> */}
 						<button>Login</button>
 					</form>
 				</div>
