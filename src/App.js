@@ -1,6 +1,11 @@
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
-import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import {
+	createBrowserRouter,
+	Outlet,
+	RouterProvider,
+	Navigate,
+} from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import LeftBar from './components/LeftBar/LeftBar';
 import RightBar from './components/RightBar/RightBar';
@@ -12,19 +17,34 @@ function App() {
 		return (
 			<div>
 				<NavBar />
-				<div style={{ display: 'flex' }}>
+				<main style={{ display: 'flex' }}>
 					<LeftBar />
-					<Outlet />
+					<section style={{ flex: 7 }}>
+						<Outlet />
+					</section>
 					<RightBar />
-				</div>
+				</main>
 			</div>
 		);
+	};
+
+	const currentUser = true; //I can't acces to HomePage (with current Profile)
+
+	const ProtectedRoute = ({ children }) => {
+		if (!currentUser) {
+			return <Navigate to="/login" />;
+		}
+		return children;
 	};
 
 	const router = createBrowserRouter([
 		{
 			path: '/',
-			element: <Layout />,
+			element: (
+				<ProtectedRoute>
+					<Layout />
+				</ProtectedRoute>
+			),
 			children: [
 				{
 					path: '/',

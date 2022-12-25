@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 /* some global styles */
+* {
+	box-sizing: border-box;
+}
+
 html {
 	line-height: 1.15;
 	/* Prevent adjustments of font size after orientation changes in iOS */
@@ -41,4 +45,9 @@ textarea {
 ol,
 ul {
 	list-style: none;
+}
+
+/* links */
+a {
+	text-decoration: none;
 }

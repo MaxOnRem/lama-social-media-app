@@ -6,7 +6,7 @@
 	justify-content: center;
 	.card {
 		width: 50%;
-		min-height: 600px;
+		min-height: 700px;
 		display: flex;
 		background-color: white;
 		border-radius: 10px;
@@ -14,6 +14,7 @@
 		.left {
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
 			flex: 1;
 			background: linear-gradient(
 					rgba(39, 11, 96, 0.5),
