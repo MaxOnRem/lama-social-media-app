@@ -11,11 +11,16 @@ import LeftBar from './components/LeftBar/LeftBar';
 import RightBar from './components/RightBar/RightBar';
 import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile';
+import './style.scss';
+import { useContext } from 'react';
+import { DarkModeContext } from './context/darkModeContext';
 
 function App() {
+	const { darkMode } = useContext(DarkModeContext);
+
 	const Layout = () => {
 		return (
-			<div>
+			<div className={`theme-${darkMode ? 'dark' : 'light'}`}>
 				<NavBar />
 				<main style={{ display: 'flex' }}>
 					<LeftBar />
@@ -28,7 +33,7 @@ function App() {
 		);
 	};
 
-	const currentUser = true; //I can't acces to HomePage (with current Profile)
+	const currentUser = true; //Access to HomePage (with current Profile)
 
 	const ProtectedRoute = ({ children }) => {
 		if (!currentUser) {
