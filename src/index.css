@@ -12,8 +12,8 @@ html {
 }
 
 :root {
-	--background-color: rgb(193, 190, 255);
-	--text-color: #181d31;
+	--background-color: #3d3d3d;
+	--text-color: white;
 }
 ::selection {
 	background-color: var(--background-color);

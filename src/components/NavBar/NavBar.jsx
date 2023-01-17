@@ -22,25 +22,37 @@ const NavBar = () => {
 				<Link to="/">
 					<span>LamaSocial</span>
 				</Link>
-				<HomeOutlinedIcon />
+
+				<HomeOutlinedIcon style={{ cursor: 'pointer' }} />
+
 				{darkMode ? (
-					<WbSunnyOutlinedIcon onClick={toggle} />
+					<WbSunnyOutlinedIcon
+						onClick={toggle}
+						style={{ cursor: 'pointer' }}
+					/>
 				) : (
-					<DarkModeOutlinedIcon onClick={toggle} />
+					<DarkModeOutlinedIcon
+						onClick={toggle}
+						style={{ cursor: 'pointer' }}
+					/>
 				)}
-				<GridViewOutlinedIcon />
+				<GridViewOutlinedIcon style={{ cursor: 'pointer' }} />
 				<div className="search">
-					<SearchOutlinedIcon />
+					<SearchOutlinedIcon style={{ cursor: 'pointer' }} />
 					<input type="text" placeholder="Search.." />
 				</div>
 			</div>
 			<div className="right">
-				<PersonOutlineOutlinedIcon />
-				<EmailOutlinedIcon />
-				<NotificationsOutlinedIcon />
+				<PersonOutlineOutlinedIcon style={{ cursor: 'pointer' }} />
+				<EmailOutlinedIcon style={{ cursor: 'pointer' }} />
+				<NotificationsOutlinedIcon style={{ cursor: 'pointer' }} />
 				<div className="user">
-					<img src={currentUser.profilePict} alt="profile ava " />
-					<span>{currentUser.name}</span>
+					<img
+						src={currentUser.profilePict}
+						alt="profile ava"
+						style={{ cursor: 'pointer' }}
+					/>
+					<span style={{ cursor: 'pointer' }}>{currentUser.name}</span>
 				</div>
 			</div>
 		</div>
