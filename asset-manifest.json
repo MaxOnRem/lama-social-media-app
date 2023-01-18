@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/lama-social-media-app/static/css/main.dda73542.css",
-    "main.js": "/lama-social-media-app/static/js/main.ae19ebfa.js",
-    "index.html": "/lama-social-media-app/index.html",
-    "main.dda73542.css.map": "/lama-social-media-app/static/css/main.dda73542.css.map",
-    "main.ae19ebfa.js.map": "/lama-social-media-app/static/js/main.ae19ebfa.js.map"
+    "main.css": "/static/css/main.68daf2ec.css",
+    "main.js": "/static/js/main.ae19ebfa.js",
+    "index.html": "/index.html",
+    "main.68daf2ec.css.map": "/static/css/main.68daf2ec.css.map",
+    "main.ae19ebfa.js.map": "/static/js/main.ae19ebfa.js.map"
   },
   "entrypoints": [
-    "static/css/main.dda73542.css",
+    "static/css/main.68daf2ec.css",
     "static/js/main.ae19ebfa.js"
   ]
 }
