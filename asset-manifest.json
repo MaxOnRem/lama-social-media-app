@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lama-social-media-app/static/css/main.dda73542.css",
+    "main.js": "/lama-social-media-app/static/js/main.ae19ebfa.js",
+    "index.html": "/lama-social-media-app/index.html",
+    "main.dda73542.css.map": "/lama-social-media-app/static/css/main.dda73542.css.map",
+    "main.ae19ebfa.js.map": "/lama-social-media-app/static/js/main.ae19ebfa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dda73542.css",
+    "static/js/main.ae19ebfa.js"
+  ]
+}
